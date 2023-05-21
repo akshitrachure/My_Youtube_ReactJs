@@ -27,7 +27,7 @@ const appRouter = createBrowserRouter([
 
 function App() {
   return(
-    <Router basename='/my-youtube-clone'>
+    <Router basename='/My_Youtube_ReactJs'>
     <Provider store={store}>
       
         <Header/>
