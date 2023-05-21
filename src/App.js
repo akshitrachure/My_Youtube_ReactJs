@@ -4,6 +4,7 @@ import Body from './components/Body';
 import { Provider } from 'react-redux';
 import store from './utils/store';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Switch, BrowserRouter as Router, Route} from 'react-router-dom';
 import MainComponent from './components/MainComponent';
 import WatchVideo from './components/WatchVideo';
 
@@ -26,6 +27,7 @@ const appRouter = createBrowserRouter([
 
 function App() {
   return(
+    <Router basename='/my-youtube-clone'>
     <Provider store={store}>
       
         <Header/>
@@ -34,6 +36,7 @@ function App() {
     
       
     </Provider>
+    </Router>
   );
 }
 
